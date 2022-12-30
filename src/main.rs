@@ -3,10 +3,11 @@ use std::{
     io::{prelude::*, BufReader},
 };
 
-mod d2;
+mod d3;
+use d3::{p1, p2};
 
 fn main() {
-    let file = File::open("inputs/d2.txt").expect("no such file");
+    let file = File::open("inputs/d3.txt").expect("no such file");
 
     let buf = BufReader::new(file);
 
@@ -15,6 +16,6 @@ fn main() {
         .map(|l| l.expect("Could not parse line"))
         .collect();
 
-    println!("{:?}", d2::p1(&lines));
-    println!("{:?}", d2::p2(&lines));
+    println!("{:?}", p1(&lines));
+    println!("{:?}", p2(&lines));
 }
