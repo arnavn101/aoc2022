@@ -4,11 +4,11 @@ use std::{
 };
 
 extern crate eval;
-mod d16;
-use d16::{p1, p2};
+mod d17;
+use d17::{p1, p2};
 
 fn main() {
-    let file = File::open("inputs/d16.txt").expect("no such file");
+    let file = File::open("inputs/d17.txt").expect("no such file");
 
     let buf = BufReader::new(file);
 
