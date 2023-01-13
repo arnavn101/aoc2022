@@ -3,11 +3,11 @@ use std::{
     io::{prelude::*, BufReader},
 };
 
-mod d18;
-use d18::{p1, p2};
+mod d19;
+use d19::{p1, p2};
 
 fn main() {
-    let file = File::open("inputs/d18.txt").expect("no such file");
+    let file = File::open("inputs/d19.txt").expect("no such file");
 
     let buf = BufReader::new(file);
 
